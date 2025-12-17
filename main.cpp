@@ -5,7 +5,7 @@ int main(){
     int i = 0;
     while (i < 4){
         cout<<"this is a while loop"<<endl;
-        i++;
+        i++;/*this is a comment*/
     }
     
 }
