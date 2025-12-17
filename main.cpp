@@ -2,9 +2,10 @@
 using namespace std;
 int main(){
     string name ;
-    for (int i = 0 ; i < 4;i++){
-        cout<<"this is a for loop"<<endl;
-
+    int i = 0;
+    while (i < 4){
+        cout<<"this is a while loop"<<endl;
+        i++;
     }
     
 }
