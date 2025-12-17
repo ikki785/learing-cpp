@@ -2,7 +2,9 @@
 using namespace std;
 int main(){
     string name ;
-    cout<<"what is your name"<<endl;
-    cin>>name;
-    cout<<"hi "<<name<<endl;
+    for (int i = 0 ; i < 4;i++){
+        cout<<"this is a for loop"<<endl;
+
+    }
+    
 }
