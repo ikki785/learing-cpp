@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
-void add(){
-    int a,b;
-    cout<<"enter a number"<<endl;
+void a(){
+    int a;
+    cout<<"enter your age"<<endl;
     cin>>a;
-    cout<<"enter a number"<<endl;
-    cin>>b;
-    cout<<a+b<<endl;
-
+    if (a < 18){
+        cout<<"you are a child"<<endl;
+    }
+    else if (a >= 18){
+        cout<<"you are a adult"<<endl;
+    }
 }
 int main(){
-    cout<<"making a function to add two number"<<endl;
-    add();
-    
-    
+    a(); 
 }
