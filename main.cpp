@@ -4,7 +4,7 @@ void a(){
     int a;
     char b;
     int c;
-    while (true){
+    while (true){/*add a loop in calculater*/
     cin>>a;
     cin >>b;
     cin >>c;
