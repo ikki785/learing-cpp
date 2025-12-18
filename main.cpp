@@ -2,15 +2,28 @@
 using namespace std;
 void a(){
     int a;
-    cout<<"enter your age"<<endl;
+    char b;
+    int c;
+    ;
     cin>>a;
-    if (a < 18){
-        cout<<"you are a child"<<endl;
+    cin >>b;
+    cin >>c;
+    if (b == '+'){
+        cout<<a+c;
     }
-    else if (a >= 18){
-        cout<<"you are a adult"<<endl;
+    else if(b == '-'){
+        cout<<a-c;
     }
+    else if (b == '*'){
+        cout<<a*c;
+    }
+    else if (b == '/'){
+        cout<<a/b;
+    }
+    
+
 }
 int main(){
     a(); 
+    
 }
