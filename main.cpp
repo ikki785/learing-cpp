@@ -8,22 +8,25 @@ void a(){
     cin>>a;
     cin >>b;
     cin >>c;
-    if (b == '+'){
-        cout<<a+c;
-    }
-    else if(b == '-'){
-        cout<<a-c;
-    }
-    else if (b == '*'){
-        cout<<a*c;
-    }
-    else if (b == '/'){
-        cout<<a/b;
+    switch (b){
+        case  '+':
+            cout<<a+c<<endl;
+            break;
+        case '-':
+            cout<<a-b<<endl;
+            break;
+        case '*':
+            cout<<a*c<<endl;
+            break;
+        case '/':
+            cout<<a/c<<endl;
+            break;
+        default:
+            cout<<"envialied option fool ";
+            break;
     }
     
-
 }
 int main(){
     a(); 
-    
 }
