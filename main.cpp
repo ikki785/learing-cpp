@@ -4,7 +4,10 @@ void a(){
     int a;
     char b;
     int c;
+    int i = 0;
+    char op ;
     while (true){/*add a loop in calculater*/
+    i++;
     cin>>a;
     cin >>b;
     cin >>c;
@@ -24,6 +27,15 @@ void a(){
             default:
                 cout<<"envialied option fool ";
                 break;
+            
+        }
+        if (i >= 3){
+            cout <<"do you want to contiune"<<endl;
+            cin>>op;
+            if (op == 'n'){
+                break;
+            }
+
         }
     }
     
