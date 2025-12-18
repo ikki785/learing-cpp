@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 void a(){
-    int a;
+    long long a;
     char b;
-    int c;
+    long long c;
     int i = 0;
     char op ;
     while (true){/*add a loop in calculater*/
@@ -11,7 +11,7 @@ void a(){
     cin>>a;
     cin >>b;
     cin >>c;
-        switch (b){
+    switch (b){
             case  '+':
                 cout<<a+c<<endl;
                 break;
@@ -28,8 +28,8 @@ void a(){
                 cout<<"envialied option fool ";
                 break;
             
-        }
-        if (i >= 3){
+    }
+    if (i >= 3){
             cout <<"do you want to contiune"<<endl;
             cin>>op;
             if (op == 'n'){
