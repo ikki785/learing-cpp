@@ -7,7 +7,8 @@ void ca(){
     cout<<"enter"<<endl;
     cin>>n;
     l = n.length();
-    for (int i = 0;i < l;i++){
+    
+    for (int i = l-1;i >= 0;i--){
         cout<<n[i]<<endl;
     }
     
