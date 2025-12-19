@@ -1,12 +1,16 @@
 #include <iostream>
+#include <string>
 using namespace std;
 void ca(){
-    int n ;
-    cout<<"enter a number"<<endl;
+    string n ;
+    int l ;
+    cout<<"enter"<<endl;
     cin>>n;
-    for (int i = 0 ;i<=10;i++){
-        cout<<n*i<<endl;
+    l = n.length();
+    for (int i = 0;i < l;i++){
+        cout<<n[i]<<endl;
     }
+    
     
 }
 int main(){
