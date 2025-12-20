@@ -3,7 +3,7 @@
 using namespace std;
 void ca(){
     int n ;
-    char l = '1' ;
+    char l = 1+64 ;
     
     cout<<"enter"<<endl;
     cin>>n;
