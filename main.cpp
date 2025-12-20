@@ -2,17 +2,17 @@
 #include <string>
 using namespace std;
 void ca(){
-    string n ;
+    int n ;
     int l ;
     cout<<"enter"<<endl;
     cin>>n;
-    l = n.length();
-    
-    for (int i = l-1;i >= 0;i--){
-        cout<<n[i]<<endl;
+    cin>>l;
+    for (int i = 0;i<n;i++){
+        cout << string(l, '*')<<endl;
     }
     
     
+  
 }
 int main(){
     ca(); 
