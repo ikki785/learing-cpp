@@ -8,7 +8,10 @@ void ca(){
     cin>>n;
     
     for (int i = 0;i<n;i++){
-        cout << string(n, '*')<<endl;
+        for (int j = 1;j<n+1;j++){
+            cout<<j;
+        }
+        cout<<endl;
     }
 }
 int main(){
