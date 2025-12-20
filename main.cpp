@@ -3,14 +3,14 @@
 using namespace std;
 void ca(){
     int n ;
-    char l = 1+64 ;
+    
     
     cout<<"enter"<<endl;
     cin>>n;
-    
+    char l = n ;
     for (int i = 0;i<n;i++){
-        cout<<string(n,l) << endl;
-        l++;
+        cout<<string(l,'*')<<endl;
+        l--;
     }
 }
 int main(){
