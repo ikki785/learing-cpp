@@ -3,15 +3,14 @@
 using namespace std;
 void ca(){
     int n ;
-    int l ;
+    char l = '1' ;
+    
     cout<<"enter"<<endl;
     cin>>n;
     
     for (int i = 0;i<n;i++){
-        for (int j = 1;j<n+1;j++){
-            cout<<j;
-        }
-        cout<<endl;
+        cout<<string(n,l) << endl;
+        l++;
     }
 }
 int main(){
