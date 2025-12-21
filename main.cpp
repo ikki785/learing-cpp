@@ -3,8 +3,9 @@
 using namespace std;
 void ca(){
     int n ;
-    char l = 1 ;
-    char j = '1';
+    int l = 1 ;
+    char j = 'a';
+    
     
     cout<<"enter"<<endl;
     cin>>n;
