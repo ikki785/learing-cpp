@@ -3,22 +3,15 @@
 using namespace std;
 void ca(){
     int n ;
-    int l = 1 ;
+    int l = 0 ;
     int j = 1;
     
     cin >>n;
-    l = n - 2;
+    l = n;
     
-    for (int i = 0;i<n;i++){
-        if (j == 1 || j == n){
-            cout<<string(n,'*')<<endl;
-            j++;
-        }
-        else{
-            cout<<'*'<<string(l,' ')<<'*'<<endl;
-            j++;
-        }
-        
+    for(int i = 0;i<n;i++){
+        cout<<string(l,' ')<<string(n,'*')<<endl;
+        l--;
     }
     
 
