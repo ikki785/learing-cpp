@@ -4,18 +4,29 @@ using namespace std;
 void ca(){
     int n ;
     int l = 1 ;
-    char j = 'a';
+
     
-    
-    cout<<"enter"<<endl;
-    cin>>n;
+    cin >>n;
+    int mid = n/2; 
     
     for (int i = 0;i<n;i++){
-        cout<<string(l,j)<<endl;
-        l++;
-        j++;
-    
+        if (i!=mid){
+            for(int j = 0;j<n;j++){
+                if (j == mid){
+                    cout<<"*";
+                }
+                else{
+                    cout<<" ";    
+                }
+            }
+            cout<<endl;
+        }
+        else{
+            cout<<string(n,'*')<<endl;
+        }
+        
     }
+    
 
 
 }
