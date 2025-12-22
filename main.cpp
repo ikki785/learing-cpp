@@ -4,10 +4,10 @@ using namespace std;
 
 void ca(){
     int x = 3;
-    cout<<&x<<endl;
+    int* p = &x;
+    cout<<*p<<endl;
 }
 int main(){
-
     ca(); 
-    return 100;
+    return 0;
 }
