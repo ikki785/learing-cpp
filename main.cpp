@@ -11,6 +11,12 @@ void fa(){
     }
 }
 int main(){
-    fa();
+    string pass ;
+    cout<<"enter password"<<endl;
+    cin >>pass;
+    if (pass != "0"){
+        fa();
+    }
+    
     return 0;
 }
