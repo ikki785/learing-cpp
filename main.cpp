@@ -1,22 +1,16 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-void ca(int* a,int* b){
-    int temp;
-    temp = *b;
-    *a = *b;
-    *a = temp;
+int i = 1;
+void fa(){
     
-
-    
-    
+    if (i <= 100){
+        cout<<i<<"big ass"<<endl;
+        i++;
+        fa();
+    }
 }
 int main(){
-    int x =3;
-    int y = 4;
-    cout<<x<<" "<<y<<endl;
-    ca(&x,&y); 
-    cout<<x<<" "<<y<<endl;
+    fa();
     return 0;
 }
