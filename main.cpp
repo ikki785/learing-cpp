@@ -13,7 +13,7 @@ class human{
         int age;
         void as(){
             char op;
-            cout<<"do you like big ass"<<endl;
+            cout<<"hello "<<name<<" do you like big ass"<<endl;
             cin>>op;
             if (op == 'y'||op == 'Y'){
                 for (int i=0;i<2;i++){
@@ -31,7 +31,7 @@ class human{
 };
 int main(){
     human human1;
-    human1.name = "suman";
+    human1.name = "ikki";
     human1.age = 23;
     human1.as();
     return 0;
