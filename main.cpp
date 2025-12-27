@@ -1,38 +1,46 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include <string>
 using namespace std;
-class human{
-    private :
-        void ae(char es){
-            string na ;
-            na = es;
-            cout<<na<<endl;
-        }
-    public:
-        string name;
-        int age;
-        void as(){
-            char op;
-            cout<<"hello "<<name<<" do you like big ass"<<endl;
-            cin>>op;
-            if (op == 'y'||op == 'Y'){
-                for (int i=0;i<2;i++){
-                    cout<<"big ass"<<endl;
-                }
-                ae('y');
-            
-            }
-            else {
-                cout<<"ok"<<endl;
-            }
-        }
-    
+void game(){
+    int cp;
+    string com;
+    string person;
+    srand(time(0));
+    cp = rand() % 3 + 1;
+    if (cp == 1){
+        com = "rock";
+    }
+    else if (cp == 2){
+        com = "paper";
+    }
+    else if (cp == 3){
+        com = "sezer";
+    }
+    cout<<"enter rock , paper ,sezer"<<endl;
+    cin>>person;
+    if (person == "rock" && com == "paper"){
+        cout<<"i choes "<<com<<endl;
+        cout<<"you lose"<<endl;
 
-};
+    }
+    else if(person =="paper" && com == "sezer"){
+        cout<<"i choes "<<com<<endl;
+        cout<<"you lose"<<endl;
+    }
+    else if(person == "rock" && com == "sezer"){
+        cout<<"i choes "<<com<<endl;
+        cout<<"you win"<<endl;
+    }
+    else if(person == "rock" && com == "rock"){
+        cout<<"i choes "<<com<<endl;
+        cout<<"draw"<<endl;
+    }
+    else {
+        cout<<com;
+    }
+}
 int main(){
-    human human1;
-    human1.name = "ikki";
-    human1.age = 23;
-    human1.as();
-    return 0;
+    game();
 }
