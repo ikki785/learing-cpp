@@ -29,17 +29,28 @@ void game(){
         cout<<"i choes "<<com<<endl;
         cout<<"you lose"<<endl;
     }
+    else if(person == "paper"&& com == "rock"){
+        cout<<"i choes "<<com<<endl;
+        cout<<"you won"<<endl;
+    }
+    else if(person == "sezer"&& com == "paper"){
+        cout<<"i choes "<<com<<endl;
+        cout<<"you won"<<endl;
+    }
+    else if(person == "paper"&& com == "sezer"){
+        cout<<"i choes "<<com<<endl;
+        cout<<"you lose"<<endl;
+    }
     else if(person == "rock" && com == "sezer"){
         cout<<"i choes "<<com<<endl;
-        cout<<"you win"<<endl;
+        cout<<"you won"<<endl;
     }
-    else if(person == "rock" && com == "rock"){
+    else if(person == com){
         cout<<"i choes "<<com<<endl;
         cout<<"draw"<<endl;
+
     }
-    else {
-        cout<<com;
-    }
+
 }
 int main(){
     game();
